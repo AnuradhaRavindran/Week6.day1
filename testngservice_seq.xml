@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  
+  <test thread-count="5" name="Test">
+   <parameter name="url" value="https://dev80921.service-now.com/navpage.do"></parameter>
+   <parameter name="username" value="admin"></parameter>
+    <parameter name="password" value="Rithika"></parameter>
+    <classes>
+    <!--   <class name="serviceNow.CreateIncident"/>-->
+     <!--    <class name="serviceNow.UpdateIncident"/>-->
+       <class name="serviceNow.AssignIncident"/>
+   <!--   <class name="serviceNow.DeleteIncident"/> -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
